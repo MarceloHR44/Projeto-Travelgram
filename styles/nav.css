@@ -1,0 +1,24 @@
+nav {
+  display: flex; /* deixar tudo um ao lado do outro */
+  justify-content: space-between; /* deixar espaÃ§o entre as imagens */
+  align-items: center; /* Alinha no centro da nav */
+
+   line-height: 0; /* tirar os espaÃ§os extras */
+   padding-block: 20px; /* para espaÃ§os no eixo y e x */
+}
+
+nav ul {
+  list-style: none; /* tira o icone de bolinha de ul */
+  display: flex;
+  align-items: center; 
+  gap: 24px; /* espaÃ§o entre elementos */
+
+  padding-block: 8px; /* em cima e em baixo dos elementos */
+}
+
+nav ul li:last-child img { /* para pegar o ultimo filho da img */
+  width: 40px; /* para largura */
+  height: 40px; /* para altura */
+  object-fit: cover; /* para cobrir todo o espaÃ§o de 40x40*/
+  border-radius: 50%; /* se nao for imagem quadra para arredonada-la */
+}
